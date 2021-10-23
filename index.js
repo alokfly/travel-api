@@ -11,6 +11,7 @@ const covidProtocolRoutes = require("./routes/covidProtocolRoutes");
 const maximizeTripRoutes = require("./routes/maximizeTripRoute");
 const caravanningRoutes = require("./routes/caravanningRoutes");
 const contactUsRoutes = require("./routes/contactUsRoutes");
+const ourBestCollectionRoutes = require("./routes/ourBestCollectionRoutes");
 
 require("dotenv").config();
 const app = express();
@@ -27,6 +28,7 @@ app.use("/", covidProtocolRoutes);
 app.use("/", maximizeTripRoutes);
 app.use("/", caravanningRoutes);
 app.use("/", contactUsRoutes);
+app.use("/", ourBestCollectionRoutes);
 // demoflyweis.in:5060
 
 const PORT = process.env.PORT || 5000;
